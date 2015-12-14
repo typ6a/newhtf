@@ -1,0 +1,75 @@
+<div id="report-panel" class="report-panel" url="<?= BASE_URL ?>" users:count="<?= $total_users ?>">
+	<div id="service-items">
+		<div class="service-item-caption">
+			<?php if(isset($total_users)): ?>
+				<div>Total found users: <?= $total_users ?><div>
+			<?php endif; ?>
+			<div><a href="process.php?action=delete&book_id=<?= $book_id ?>" onclick="return confirm('Are you sure you want to delete this book?');">Delete Book</a></div>
+			<table>
+				<thead>
+					<th class="item-id"></th>
+					<th class="item-photo">Photo</th>
+					<th class="item-name">Name</th>
+					<th class="item-type">Type</th>
+					<th class="item-rate">Rate</th>
+					<th class="item-about">About</th>
+				</thead>
+				<tbody>
+					<?php if(isset($messages)): ?>
+						<tr>
+							<td class="grid-messages" colspan="8">
+								<div class="messages<?php if(!count($messages)): ?> hidden<?php endif; ?>">
+									<?php foreach($messages as $msg): ?>
+										<p><?= $msg ?></p>
+									<?php endforeach; ?>
+								</div>
+							</td>
+						</tr>
+					<?php endif; ?>
+					<?php if(isset($users) && count($users)): ?>
+						<?php foreach($users as $ukey => $user): ?>
+							<tr class="<?php if($ukey%2 == 0): ?>even<?php else: ?>odd<?php endif; ?>">
+								<td class="item-id">
+									<?= $user->id ?>
+									<?php /*<input type="checkbox" name="f[user][]" value="<?= $user->id ?>" <?php if(isset($f['user']) && $f['user'] != 'all' && in_array($user->id, $f['user'])): ?>checked="checked"<?php endif; ?> />*/ ?>
+								</td>
+								<td class="item-photo"><img src="<?= $user->getImage() ?>" width="72" height="72" /></td>
+								<td class="item-name"><?= $user->name ?></td>
+								<td class="item-type"><?= $user->getTypeFormatted() ?></td>
+								<td class="item-rate"><?= $user->getr('rate') ?></td>
+								<td class="item-about">
+									<p>
+										<a target="_blank" class="name" href="<?= $user->url ?>"><?= $user->name ?></a><br/>
+										<?php if($user->website): ?>
+											<a target="_blank" href="<?= $user->website ?>"><?= preg_replace('/^https?:\/\/([^\/]+)\/?$/', '$1', $user->website) ?></a><br/>
+										<?php endif; ?>
+									</p>
+								</td>
+							</tr>
+						<?php endforeach; ?>
+					<?php endif; ?>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="10">
+							<?php if(isset($pager) && $pager): ?>
+								<div class="grid-pager">
+									<?php for($page=1; $page<=$pager['pages_total']; $page++): ?>
+										<?php if($page == $pager['page']): ?>
+											<a class="current"><?= $page ?></a>
+										<?php else: ?>
+											<a href="<?= BASE_URL . '?page='.$page ?>"><?= $page ?></a>
+										<?php endif; ?>
+									<?php endfor; ?>
+									<div class="clear"></div>
+								</div>
+							<?php endif; ?>					
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>

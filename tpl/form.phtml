@@ -1,0 +1,19 @@
+<div id="request-panel" class="request-panel" base:url="<?= BASE_URL ?>">
+	<form id="filter-form" action="export.php" method="POST">
+		<input type="hidden" name="action" value="export" class="export" />
+		<div class="col-left">
+			<?php if(count($states)): ?>
+				<select name="state_id" class="field-state">
+					<option value="all">Export all states or choose one</option>
+					<?php foreach($states as $state): ?>
+					<option value="<?= $state->id ?>">Export -> <?= $state->code ?></option>
+					<?php endforeach; ?>
+				</select>
+			<?php endif; ?>
+			<input type="submit" class="submit" value="Export" />
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+	</form>
+	<div class="clear"></div>
+</div>

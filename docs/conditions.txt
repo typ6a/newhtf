@@ -1,0 +1,73 @@
+I am looking to scrape the entire games catalog of the Xbox online store.
+
+Relevant URLs:
+Xbox 360 games: http://marketplace.xbox.com/en-US/Games/All
+Xbox One games: https://store.xbox.com/en-US/Xbox-One/Games/
+
+Example 360 game URL:
+http://marketplace.xbox.com/en-US/Product/FIFA-Soccer-13/66acd000-77fe-1000-9115-d80245410998
+
+Example One game URL:
+https://store.xbox.com/en-US/Xbox-One/Games/Far-Cry-4/7f06438e-eefb-4375-96d6-a981e6750c5d
+
+The task is to scrape all data fields such as game 
+
+title, 
+developer, 
+publisher, 
+genre list, 
+release date, 
+description, 
+size, 
+price, 
+price of various editions/DLCs/season pass, 
+# of DLCs/editions, 
+# of ratings of DLCs/average rating score, 
+? - number of ratings for the game, 
+? - average rating score for the game
+For 360:
+	-features and 
+	-online features, 
+	-facebook likes
+
+Task is to fetch crawl the individual game URLs for 360 and One, and then scrape all data fields and write to a CSV file. One file for 360 and another for One. One row per game.
+
+Successful completion of project may lead to additional similar projects.
+
+===========================================================================================================
+
+
+
+For Xbox 360 games:
+
+E.g. http://marketplace.xbox.com/en-US/Product/GTA-V/66acd000-77fe-1000-9115-d802545408a7?SortBy=TopRated
+
+Has 45 DLCs (downloadable content), 1 game, 5 videos, etc.
+
+ 
+
+So data fields of interest would be such as:
+
+Cell A: (DLC categorized): games (1), game videos (5), game add-ons (10),�.
+Cell B: (DLCs #): 45
+Cell C: (DCLs): Grand Theft Auto V (249,252 - $59.99), Grand Theft Auto V - Trailer #2 (4,405 - FREE),�
+Cell D: (Season pass available): no
+Cell E: (Season pass price): -- (e.g. for http://marketplace.xbox.com/en-US/Product/Game-of-Thrones/66acd000-77fe-1000-9115-d80258411488 this would be $19.99)
+
+
+For Xbox One games:
+
+E.g. https://store.xbox.com/en-US/Xbox-One/Games/Lara-Croft-and-the-Temple-of-Osiris/18904bca-957f-445f-9f30-1d4ac945bbc9 there are 3 DLCs. One of them is a season pass sold for $9.99 https://store.xbox.com/en-US/Xbox-One/Dlc/Lara-Croft-and-the-Temple-of-Osiris-Season-Pass/85ca11db-ed0e-4af3-91e5-772d3f89d49b
+
+The game also includes bundles. So for this we would like to know
+
+Cell A: (DLCs #): 3
+Cell B: (DLCs): Lara Croft and the Temple of Osiris: Hitman (65 � unavailable), Lara Croft and the Temple of Osiris Season (56 � $9.99),�
+Cell C: (bundles): 1
+Cell D: (bundle price): $28.99
+Cell E (season pass): yes
+Cell F: (season pass price): $9.99
+
+--
+
+Some games come in e.g. standard and �Silver�, and �Gold Editions� and would be listed as options in bundles/DLC. So it would be of interest to have a new data column for D LCs/bundles whose title match the word �edition�. 

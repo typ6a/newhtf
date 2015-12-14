@@ -1,0 +1,3 @@
+#Options –Indexes
+Deny from all
+Allow from localhost
