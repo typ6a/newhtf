@@ -320,3 +320,64 @@ Stack trace:
 [14-Dec-2015 19:01:34 Europe/Kiev] PHP Parse error:  syntax error, unexpected '{', expecting '(' in D:\workspace\newhtf\classes\parsers\NewhtfMainCategoryParser.php on line 59
 [14-Dec-2015 19:01:35 Europe/Kiev] PHP Parse error:  syntax error, unexpected '{', expecting '(' in D:\workspace\newhtf\classes\parsers\NewhtfMainCategoryParser.php on line 59
 [14-Dec-2015 19:03:38 Europe/Kiev] PHP Parse error:  syntax error, unexpected '}' in D:\workspace\newhtf\classes\parsers\NewhtfMainCategoryParser.php on line 69
+[15-Dec-2015 12:55:32 Europe/Kiev] PHP Warning:  require_once(/home4/brembul/newhtf/classes/KDGLoader.php): failed to open stream: No such file or directory in D:\workspace\newhtf\include\config.php on line 7
+[15-Dec-2015 12:55:32 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required '/home4/brembul/newhtf/classes/KDGLoader.php' (include_path='.;D:\Server\php\pear') in D:\workspace\newhtf\include\config.php on line 7
+[15-Dec-2015 13:04:45 Europe/Kiev] PHP Warning:  require_once(/home4/brembul/newhtf/classes/KDGLoader.php): failed to open stream: No such file or directory in D:\workspace\newhtf\include\config.php on line 7
+[15-Dec-2015 13:04:45 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required '/home4/brembul/newhtf/classes/KDGLoader.php' (include_path='.;D:\Server\php\pear') in D:\workspace\newhtf\include\config.php on line 7
+[15-Dec-2015 13:05:16 Europe/Kiev] PHP Warning:  require_once(/home4/brembul/newhtf/classes/KDGLoader.php): failed to open stream: No such file or directory in D:\workspace\newhtf\include\config.php on line 7
+[15-Dec-2015 13:05:16 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required '/home4/brembul/newhtf/classes/KDGLoader.php' (include_path='.;D:\Server\php\pear') in D:\workspace\newhtf\include\config.php on line 7
+[15-Dec-2015 13:05:24 Europe/Kiev] PHP Warning:  require_once(/home4/brembul/newhtf/classes/KDGLoader.php): failed to open stream: No such file or directory in D:\workspace\newhtf\include\config.php on line 7
+[15-Dec-2015 13:05:24 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required '/home4/brembul/newhtf/classes/KDGLoader.php' (include_path='.;D:\Server\php\pear') in D:\workspace\newhtf\include\config.php on line 7
+[15-Dec-2015 13:06:13 Europe/Kiev] PHP Warning:  require_once(/home4/brembul/newhtf/classes/KDGLoader.php): failed to open stream: No such file or directory in D:\workspace\newhtf\include\config.php on line 7
+[15-Dec-2015 13:06:13 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required '/home4/brembul/newhtf/classes/KDGLoader.php' (include_path='.;D:\Server\php\pear') in D:\workspace\newhtf\include\config.php on line 7
+[15-Dec-2015 13:10:10 Europe/Kiev] PHP Warning:  require_once(/home4/brembul/newhtf/classes/KDGLoader.php): failed to open stream: No such file or directory in D:\workspace\newhtf\include\config.php on line 7
+[15-Dec-2015 13:10:10 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required '/home4/brembul/newhtf/classes/KDGLoader.php' (include_path='.;D:\Server\php\pear') in D:\workspace\newhtf\include\config.php on line 7
+[15-Dec-2015 13:13:23 Europe/Kiev] PHP Notice:  Undefined variable: maincategory in D:\workspace\newhtf\classes\parsers\NewhtfMainCategoryParser.php on line 58
+[15-Dec-2015 13:13:53 Europe/Kiev] PHP Notice:  Undefined variable: maincategory in D:\workspace\newhtf\classes\parsers\NewhtfMainCategoryParser.php on line 58
+[15-Dec-2015 13:13:54 Europe/Kiev] PHP Notice:  Undefined variable: maincategory in D:\workspace\newhtf\classes\parsers\NewhtfMainCategoryParser.php on line 58
+[15-Dec-2015 13:13:55 Europe/Kiev] PHP Notice:  Undefined variable: maincategory in D:\workspace\newhtf\classes\parsers\NewhtfMainCategoryParser.php on line 58
+[15-Dec-2015 13:13:55 Europe/Kiev] PHP Notice:  Undefined variable: maincategory in D:\workspace\newhtf\classes\parsers\NewhtfMainCategoryParser.php on line 58
+[15-Dec-2015 13:14:17 Europe/Kiev] PHP Notice:  Undefined variable: mainCategories in D:\workspace\newhtf\classes\parsers\NewhtfMainCategoryParser.php on line 58
+[15-Dec-2015 13:14:19 Europe/Kiev] PHP Notice:  Undefined variable: mainCategories in D:\workspace\newhtf\classes\parsers\NewhtfMainCategoryParser.php on line 58
+[15-Dec-2015 13:14:31 Europe/Kiev] PHP Notice:  Undefined variable: mainCategories in D:\workspace\newhtf\classes\parsers\NewhtfMainCategoryParser.php on line 58
+[15-Dec-2015 13:16:07 Europe/Kiev] PHP Fatal error:  Call to undefined function parseMainCategory() in D:\workspace\newhtf\classes\parsers\NewhtfMainCategoryParser.php on line 57
+[15-Dec-2015 13:16:41 Europe/Kiev] PHP Fatal error:  Call to undefined function parseMainCategory() in D:\workspace\newhtf\classes\parsers\NewhtfMainCategoryParser.php on line 57
+[15-Dec-2015 13:16:58 Europe/Kiev] PHP Fatal error:  Call to undefined function parseMainCategory() in D:\workspace\newhtf\classes\parsers\NewhtfMainCategoryParser.php on line 57
+[15-Dec-2015 13:16:59 Europe/Kiev] PHP Fatal error:  Call to undefined function parseMainCategory() in D:\workspace\newhtf\classes\parsers\NewhtfMainCategoryParser.php on line 57
+[15-Dec-2015 13:17:00 Europe/Kiev] PHP Fatal error:  Call to undefined function parseMainCategory() in D:\workspace\newhtf\classes\parsers\NewhtfMainCategoryParser.php on line 57
+[15-Dec-2015 13:17:00 Europe/Kiev] PHP Fatal error:  Call to undefined function parseMainCategory() in D:\workspace\newhtf\classes\parsers\NewhtfMainCategoryParser.php on line 57
+[15-Dec-2015 13:17:00 Europe/Kiev] PHP Fatal error:  Call to undefined function parseMainCategory() in D:\workspace\newhtf\classes\parsers\NewhtfMainCategoryParser.php on line 57
+[15-Dec-2015 13:18:49 Europe/Kiev] PHP Notice:  Undefined variable: mainCategories in D:\workspace\newhtf\classes\parsers\NewhtfMainCategoryParser.php on line 57
+[15-Dec-2015 13:18:51 Europe/Kiev] PHP Notice:  Undefined variable: mainCategories in D:\workspace\newhtf\classes\parsers\NewhtfMainCategoryParser.php on line 57
+[15-Dec-2015 13:18:51 Europe/Kiev] PHP Notice:  Undefined variable: mainCategories in D:\workspace\newhtf\classes\parsers\NewhtfMainCategoryParser.php on line 57
+[15-Dec-2015 13:18:52 Europe/Kiev] PHP Notice:  Undefined variable: mainCategories in D:\workspace\newhtf\classes\parsers\NewhtfMainCategoryParser.php on line 57
+[15-Dec-2015 13:29:33 Europe/Kiev] PHP Parse error:  syntax error, unexpected 'pre' (T_STRING), expecting function (T_FUNCTION) in D:\workspace\newhtf\classes\parsers\NewhtfMainCategoryParser.php on line 36
+[15-Dec-2015 13:32:54 Europe/Kiev] PHP Warning:  file_get_contents():  in D:\workspace\newhtf\startpoint.php on line 20
+[15-Dec-2015 13:32:54 Europe/Kiev] PHP Warning:  file_get_contents(http://newhtf.ru/catalog/):  in D:\workspace\newhtf\startpoint.php on line 20
+[15-Dec-2015 13:33:15 Europe/Kiev] PHP Warning:  file_get_contents():  in D:\workspace\newhtf\startpoint.php on line 20
+[15-Dec-2015 13:33:15 Europe/Kiev] PHP Warning:  file_get_contents(http://newhtf.ru/catalog/):  in D:\workspace\newhtf\startpoint.php on line 20
+[15-Dec-2015 13:34:40 Europe/Kiev] PHP Warning:  file_get_contents():  in D:\workspace\newhtf\startpoint.php on line 20
+[15-Dec-2015 13:34:40 Europe/Kiev] PHP Warning:  file_get_contents(http://newhtf.ru/catalog/):  in D:\workspace\newhtf\startpoint.php on line 20
+[15-Dec-2015 13:34:45 Europe/Kiev] PHP Warning:  file_get_contents():  in D:\workspace\newhtf\startpoint.php on line 20
+[15-Dec-2015 13:34:45 Europe/Kiev] PHP Warning:  file_get_contents(http://newhtf.ru/catalog/):  in D:\workspace\newhtf\startpoint.php on line 20
+[15-Dec-2015 16:10:44 Europe/Kiev] PHP Fatal error:  Call to undefined method NewhtfMainCategoryParser::hasDataObject() in D:\workspace\newhtf\classes\KDGParser.php on line 71
+[15-Dec-2015 16:34:43 Europe/Kiev] PHP Fatal error:  Class 'NewhtfMiddleCategoryParser' not found in D:\workspace\newhtf\classes\crawlers\NewhtfCategoryCrawler.php on line 63
+[15-Dec-2015 16:50:03 Europe/Kiev] PHP Fatal error:  Access to undeclared static property: Crawler::$response_info in D:\workspace\newhtf\classes\KDGCrawler.php on line 48
+[15-Dec-2015 17:46:04 Europe/Kiev] PHP Fatal error:  Cannot use object of type Category as array in D:\workspace\newhtf\classes\KDGEntity.php on line 62
+[15-Dec-2015 17:46:38 Europe/Kiev] PHP Fatal error:  Cannot use object of type Category as array in D:\workspace\newhtf\classes\KDGEntity.php on line 62
+[15-Dec-2015 17:49:09 Europe/Kiev] PHP Fatal error:  Class 'Category' not found in D:\workspace\newhtf\classes\crawlers\NewhtfCategoryCrawler.php on line 40
+[15-Dec-2015 18:01:53 Europe/Kiev] PHP Notice:  Undefined index: token in D:\workspace\newhtf\classes\KDGCrawler.php on line 122
+[15-Dec-2015 18:01:53 Europe/Kiev] PHP Notice:  Use of undefined constant SERVICE_USERNAME - assumed 'SERVICE_USERNAME' in D:\workspace\newhtf\classes\KDGCrawler.php on line 123
+[15-Dec-2015 18:01:53 Europe/Kiev] PHP Notice:  Use of undefined constant SERVICE_PASSWORD - assumed 'SERVICE_PASSWORD' in D:\workspace\newhtf\classes\KDGCrawler.php on line 124
+[15-Dec-2015 18:30:45 Europe/Kiev] PHP Fatal error:  Call to undefined method CategoryModel::findAllMain() in D:\workspace\newhtf\classes\crawlers\NewhtfCategoryCrawler.php on line 49
+[16-Dec-2015 15:34:51 Europe/Kiev] PHP Fatal error:  Class 'CategoryModel' not found in D:\workspace\newhtf\classes\crawlers\NewhtfCollectProductsCrawler.php on line 11
+[16-Dec-2015 15:52:47 Europe/Kiev] PHP Fatal error:  Call to undefined method DOMElement::query() in D:\workspace\newhtf\classes\parsers\NewhtfProductsListParser.php on line 11
+[16-Dec-2015 16:03:03 Europe/Kiev] PHP Notice:  Undefined variable: item in D:\workspace\newhtf\classes\parsers\NewhtfProductsListParser.php on line 15
+[16-Dec-2015 16:03:03 Europe/Kiev] PHP Catchable fatal error:  Argument 1 passed to DOMXPath::__construct() must be an instance of DOMDocument, null given, called in D:\workspace\newhtf\classes\KDGParser.php on line 29 and defined in D:\workspace\newhtf\classes\parsers\NewhtfProductsListParser.php on line 15
+[16-Dec-2015 16:03:14 Europe/Kiev] PHP Catchable fatal error:  Argument 1 passed to DOMXPath::__construct() must be an instance of DOMDocument, instance of DOMElement given, called in D:\workspace\newhtf\classes\KDGParser.php on line 29 and defined in D:\workspace\newhtf\classes\parsers\NewhtfProductsListParser.php on line 16
+[16-Dec-2015 16:04:38 Europe/Kiev] PHP Catchable fatal error:  Argument 2 passed to NewhtfProductsListParser::find() must be an instance of string, string given, called in D:\workspace\newhtf\classes\parsers\NewhtfProductsListParser.php on line 16 and defined in D:\workspace\newhtf\classes\parsers\NewhtfProductsListParser.php on line 7
+[16-Dec-2015 16:05:03 Europe/Kiev] PHP Parse error:  syntax error, unexpected '(string)' (string) (T_STRING_CAST), expecting '&' or variable (T_VARIABLE) in D:\workspace\newhtf\classes\parsers\NewhtfProductsListParser.php on line 7
+[16-Dec-2015 16:12:05 Europe/Kiev] PHP Fatal error:  Call to undefined method DOMElement::saveHtml() in D:\workspace\newhtf\classes\parsers\NewhtfProductsListParser.php on line 12
+[16-Dec-2015 16:12:10 Europe/Kiev] PHP Fatal error:  Call to undefined method DOMElement::save() in D:\workspace\newhtf\classes\parsers\NewhtfProductsListParser.php on line 12
+[16-Dec-2015 16:46:51 Europe/Kiev] PHP Fatal error:  Class 'ProductModel' not found in D:\workspace\newhtf\classes\crawlers\NewhtfCollectProductsCrawler.php on line 31
+[16-Dec-2015 18:01:03 Europe/Kiev] PHP Notice:  Trying to get property of non-object in D:\workspace\newhtf\classes\parsers\NewhtfUpdateProductParser.php on line 69

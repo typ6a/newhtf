@@ -322,7 +322,7 @@ class KDGDatabase extends Database {
 				return $this->get_insert_id();
 			} return false;
 		}elseif($this->_action_type == self::ACTION_SELECT){
-			if(is_resource($result)){
+			if($result instanceof mysqli_result){
 				//getDiffMemory('m1');
 				$numRows = mysqli_num_rows($result);
 				//getDiffMemory('m2');

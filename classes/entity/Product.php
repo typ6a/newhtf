@@ -8,9 +8,11 @@ class Product extends KDGEntity {
 	
 	protected $_fields = array(
 		'id' => array('type' => 'integer', 'notnull' => true),
+		'category_id' => array('type' => 'integer', 'notnull' => true),
 		'title' => array('type' => 'string', 'notnull' => true),
         'price' => array('type' => 'string', 'notnull' => false),
-        'html' => array('type' => 'string', 'notnull' => true)
+        'url' => array('type' => 'string', 'notnull' => true),
+        'processed' => array('type' => 'integer', 'notnull' => true, 'default' => 0)
 	);
 	
 }

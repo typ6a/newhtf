@@ -16,7 +16,7 @@ class Crawler {
 	public function __construct(){
 		set_time_limit(0);
 		$this->startBuffering();
-		$this->execute();
+		$this->crawl();
 	}
 	
 	public function __destruct(){
@@ -46,6 +46,8 @@ class Crawler {
 		curl_setopt($ch, CURLOPT_TIMEOUT, 60);
 		curl_setopt($ch, CURLOPT_MAXREDIRS, 10);
 		//self::$response_info = curl_getinfo($ch);
+		//$info = curl_getinfo($ch);
+        //pre($info,1);
         $result = curl_exec($ch);
 		curl_close($ch);
 		return $result;
@@ -86,7 +88,7 @@ class Crawler {
 		} return false;
 	}
 	
-	protected function execute(){
+	protected function crawl(){
 		if(!file_exists(self::getCookiesFile()) || !file_exists(self::getAuthTokenFile()) || !$this->isLogedIn()){
 			self::executeLogin();
 		}else{

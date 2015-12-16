@@ -26,12 +26,9 @@ abstract class KDGParser {
 		if($this->hasResponse()){
 			$this->createResponseObject();
 			if($this->hasResponseObject()){
-				$this->createDataObject();
-				if($this->hasDataObject()){
-					$this->parse();
-					$this->destroy();
-					return true;
-				} else return 'No Data Object';
+                $this->parse();
+                $this->destroy();
+                return true;
 			} else return 'No Response Object';
 		} else return 'No Response';
 		$this->destroy();
@@ -50,22 +47,9 @@ abstract class KDGParser {
         $dom = new DomDocument();
         @$dom->loadHTML($this->response);
         $this->setResponseObject(new DomXPath($dom));
-        //$this->setResponseObject(new simple_html_dom($this->getResponse()));
     }
 	
-	abstract protected function parseDataObject();
-    
-	protected function hasDataObject(){return $this->data_object ? true : false;}
-	protected function getDataObject(){return $this->data_object;}
-	protected function setDataObject($object){$this->data_object = $object;}
-	protected function createDataObject(){
-		if($this->hasResponseObject()){
-			$this->setDataObject($this->parseDataObject());
-		}
-	}
-	
 	protected function destroy(){
-		$this->destroyDataObject();
 		$this->destroyResponseObject();
 		$this->destroyResponse();
 	}
@@ -80,14 +64,6 @@ abstract class KDGParser {
 				$this->getResponseObject()->clear();
 			}
 		} $this->setResponseObject(null);
-	}
-	
-	protected function destroyDataObject(){
-		if($this->hasDataObject()){
-			if($this->getDataObject() instanceof simple_html_dom_node){
-				$this->getDataObject()->clear();
-			}
-		} $this->setDataObject(null);
 	}
 	
 	protected function save(){}
