@@ -9,14 +9,10 @@ KDGLoader::loadLibraryClass('parsers/NewhtfUpdateProductParser');
 class NewhtfUpdateProductsCrawler extends Crawler {
     
     protected function crawl(){
-        $products_list = ProductModel::findAll();
-        foreach ($products_list as $product) {
-            
-           // pre($product,1);
-            
+        $products = ProductModel::findAll();
+        foreach ($products as $product) {
+            sleep(0.2);
             $html = $this->requestProductPage($product->url);
-            
-                       
             if($html){
                 $this->parseProduct($html, $product);
             }
@@ -24,24 +20,12 @@ class NewhtfUpdateProductsCrawler extends Crawler {
     }
     
     protected function requestProductPage($url){
-		$this->sendBuffered('category: ' . $url);
+		$this->sendBuffered('[product url]: ' . $url);
 		return $this->makeRequest($url, false, false, false);
 	}
     
 	protected function parseProduct($html, $product){
-		$parser = new NewhtfUpdateProductParser($html, $product);
-        foreach ($parser->product as $data) {
-            $entity = ProductUpdateModel::findOneByUrl($data['url']);
-            if(!$entity){
-                $entity = new Product();
-            }
-            $data['category_id'] = $product->id;
-            $entity->fromArray($data);
-            $entity->save();
-            $this->sendBuffered('product: ' . $entity->url);
-        }
-        //$category->processed = 1;
-        //$category->save();
+		new NewhtfUpdateProductParser($html, $product);
 	}
 	
 }

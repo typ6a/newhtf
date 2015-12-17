@@ -381,3 +381,7 @@ Stack trace:
 [16-Dec-2015 16:12:10 Europe/Kiev] PHP Fatal error:  Call to undefined method DOMElement::save() in D:\workspace\newhtf\classes\parsers\NewhtfProductsListParser.php on line 12
 [16-Dec-2015 16:46:51 Europe/Kiev] PHP Fatal error:  Class 'ProductModel' not found in D:\workspace\newhtf\classes\crawlers\NewhtfCollectProductsCrawler.php on line 31
 [16-Dec-2015 18:01:03 Europe/Kiev] PHP Notice:  Trying to get property of non-object in D:\workspace\newhtf\classes\parsers\NewhtfUpdateProductParser.php on line 69
+[17-Dec-2015 15:59:03 Europe/Kiev] PHP Fatal error:  Class 'ImageModel' not found in D:\workspace\newhtf\classes\parsers\NewhtfUpdateProductParser.php on line 51
+[17-Dec-2015 16:02:54 Europe/Kiev] PHP Notice:  Undefined property: NewhtfUpdateProductParser::$product_id in D:\workspace\newhtf\classes\parsers\NewhtfUpdateProductParser.php on line 55
+[17-Dec-2015 16:02:55 Europe/Kiev] PHP Fatal error:  Class 'Image' not found in D:\workspace\newhtf\classes\parsers\NewhtfUpdateProductParser.php on line 62
+[17-Dec-2015 16:03:40 Europe/Kiev] PHP Fatal error:  Class 'Image' not found in D:\workspace\newhtf\classes\parsers\NewhtfUpdateProductParser.php on line 62
