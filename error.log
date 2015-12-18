@@ -385,3 +385,17 @@ Stack trace:
 [17-Dec-2015 16:02:54 Europe/Kiev] PHP Notice:  Undefined property: NewhtfUpdateProductParser::$product_id in D:\workspace\newhtf\classes\parsers\NewhtfUpdateProductParser.php on line 55
 [17-Dec-2015 16:02:55 Europe/Kiev] PHP Fatal error:  Class 'Image' not found in D:\workspace\newhtf\classes\parsers\NewhtfUpdateProductParser.php on line 62
 [17-Dec-2015 16:03:40 Europe/Kiev] PHP Fatal error:  Class 'Image' not found in D:\workspace\newhtf\classes\parsers\NewhtfUpdateProductParser.php on line 62
+[18-Dec-2015 13:27:09 Europe/Kiev] PHP Warning:  file_get_contents(http://newhtf.ru.images.1c-bitrix-cdn.ru/upload/resizer2/7_e1c5dd279eff9f53e6d8e2cd626acd68.jpg?14504380260): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in D:\workspace\newhtf\classes\parsers\NewhtfUpdateProductParser.php on line 61
+[18-Dec-2015 13:29:07 Europe/Kiev] PHP Warning:  file_get_contents(http://newhtf.ru.images.1c-bitrix-cdn.ru/upload/resizer2/7_aeb00c885b6cf42e97d28404c794a7c2.jpg?14504381420): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in D:\workspace\newhtf\classes\parsers\NewhtfUpdateProductParser.php on line 61
+[18-Dec-2015 13:29:22 Europe/Kiev] PHP Warning:  file_get_contents(http://newhtf.ru.images.1c-bitrix-cdn.ru/upload/resizer2/7_70638e9db38e263009484ea7e55d44c0.jpg?14504381590): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in D:\workspace\newhtf\classes\parsers\NewhtfUpdateProductParser.php on line 61
+[18-Dec-2015 13:29:30 Europe/Kiev] PHP Warning:  file_get_contents(http://newhtf.ru.images.1c-bitrix-cdn.ru/upload/resizer2/7_157fd004dcaa4101cf1cc809b2ccbb34.jpg?14504381650): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in D:\workspace\newhtf\classes\parsers\NewhtfUpdateProductParser.php on line 61
+[18-Dec-2015 13:29:41 Europe/Kiev] PHP Warning:  file_get_contents(http://newhtf.ru.images.1c-bitrix-cdn.ru/upload/resizer2/7_561cc640c7c96d03f234b904aeffaead.jpg?14504381790): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in D:\workspace\newhtf\classes\parsers\NewhtfUpdateProductParser.php on line 61
+[18-Dec-2015 13:29:54 Europe/Kiev] PHP Warning:  file_get_contents(http://newhtf.ru.images.1c-bitrix-cdn.ru/upload/resizer2/7_87ad80935b89f52c3800f39fcb1d44cd.jpg?14504381910): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in D:\workspace\newhtf\classes\parsers\NewhtfUpdateProductParser.php on line 61
+[18-Dec-2015 13:30:59 Europe/Kiev] PHP Warning:  file_get_contents(http://newhtf.ru.images.1c-bitrix-cdn.ru/upload/resizer2/7_18bca4fdb54c8c259c85f2ac05a21fa2.jpg?14504382530): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in D:\workspace\newhtf\classes\parsers\NewhtfUpdateProductParser.php on line 61
