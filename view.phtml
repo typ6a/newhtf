@@ -32,6 +32,80 @@
   </head>
 
   <body>
+      
+      
+      
+      
+      
+<?php
+
+  $mysqli = new mysqli('newhtf.localhost', 'root', 'projects', 'newhtf');
+  if (mysqli_connect_errno()) {
+    echo "Подключение невозможно: ".mysqli_connect_error();
+  }
+  
+
+
+
+
+
+
+
+
+
+
+if(isset($_GET['id'])) {$category_id = $_GET['id'];}
+if(isset($_GET['hid'])) {$hid = $_GET['hid'];}
+if(isset($_GET['gid'])) {$gid = $_GET['gid'];}
+
+
+
+
+$mybasecat = mysql_query("SELECT `id`,`cat_name`,`cat_pic` FROM `categories` WHERE `parent_id`='0'",$db) or die(mysql_error());
+if (mysql_num_rows($mybasecat) > 0)
+{
+	$myrowcat = mysql_fetch_array($mybasecat);
+	do { 
+
+    echo   '<li><a href="cat.php?gid='.$myrowcat['cat_id'].'&cat_id='.$myrowcat['cat_id'].'">'.$myrowcat['cat_name_ru'].'</a></li>';
+    
+    $mybasecat1 = mysql_query("SELECT `cat_id`,`cat_name` FROM `categories` WHERE (`parent_id`='{$gid}' AND `parent_id`='{$myrowcat['cat_id']}') ORDER BY `cat_id` DESC",$db) or die(mysql_error());
+	$myrowcat1 = mysql_fetch_array($mybasecat1);
+		if (mysql_num_rows($mybasecat1) > 0)
+     	{
+				
+	    echo	'<ul style="margin: 0px 0px 0px 20px;">';
+		
+	    do	
+	      {
+    	      echo	'<li style="height: 10px;"><a style="font-size: 11px;" href="cat.php?gid='.$gid.'&cat_id='.$myrowcat1['cat_id'].'">'.$myrowcat1['cat_name'].'</a></li>';
+   		         $mybasecat2 = mysql_query("SELECT `cat_id`,`cat_name` FROM `categories` WHERE (`parent_id`='{$cat_id}' AND `parent_id`='{$myrowcat1['cat_id']}') OR (`parent_id`='{$hid}' AND `parent_id`='{$myrowcat1['cat_id']}') ORDER BY `cat_id` DESC",$db) or die(mysql_error());
+		         $myrowcat2 = mysql_fetch_array($mybasecat2);         
+  			 if (mysql_num_rows($mybasecat2) > 0)
+        	         {
+				echo	'<ul style="margin: 0px 0px 0px 40px;">';
+					   do
+					   {
+					    echo '<li style="height: 10px;"><a style="font-size: 11px;" href="cat.php?gid='.$gid.'&hid='.$myrowcat1['cat_id'].'&cat_id='.$myrowcat2['cat_id'].'">'.$myrowcat2['cat_name'].'</a></li>';  
+					   }
+					   while($myrowcat2 = mysql_fetch_array($mybasecat2));
+					   echo '</ul>';
+			 }
+	      }	
+              while($myrowcat1 = mysql_fetch_array($mybasecat1));
+	      echo    '<li style="height: 2px;"></li>
+		       </ul>';
+		
+		}
+	}
+	while($myrowcat = mysql_fetch_array($mybasecat));	
+}
+else { echo "Нет категорий"; }
+$mysqli->close();
+?>
+      
+      
+      
 
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">

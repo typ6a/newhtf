@@ -399,3 +399,16 @@ Stack trace:
  in D:\workspace\newhtf\classes\parsers\NewhtfUpdateProductParser.php on line 61
 [18-Dec-2015 13:30:59 Europe/Kiev] PHP Warning:  file_get_contents(http://newhtf.ru.images.1c-bitrix-cdn.ru/upload/resizer2/7_18bca4fdb54c8c259c85f2ac05a21fa2.jpg?14504382530): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
  in D:\workspace\newhtf\classes\parsers\NewhtfUpdateProductParser.php on line 61
+[21-Dec-2015 15:12:47 Europe/Kiev] PHP Notice:  Undefined variable: db in D:\workspace\newhtf\view.phtml on line 49
+[21-Dec-2015 15:12:47 Europe/Kiev] PHP Warning:  mysql_query() expects parameter 2 to be resource, null given in D:\workspace\newhtf\view.phtml on line 49
+[21-Dec-2015 15:53:38 Europe/Kiev] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in D:\workspace\newhtf\view.phtml on line 46
+[21-Dec-2015 15:53:38 Europe/Kiev] PHP Notice:  Undefined variable: db in D:\workspace\newhtf\view.phtml on line 64
+[21-Dec-2015 15:53:38 Europe/Kiev] PHP Warning:  mysql_query() expects parameter 2 to be resource, null given in D:\workspace\newhtf\view.phtml on line 64
+[21-Dec-2015 15:56:18 Europe/Kiev] PHP Notice:  Undefined variable: db in D:\workspace\newhtf\view.phtml on line 64
+[21-Dec-2015 15:56:18 Europe/Kiev] PHP Warning:  mysql_query() expects parameter 2 to be resource, null given in D:\workspace\newhtf\view.phtml on line 64
+[21-Dec-2015 15:56:22 Europe/Kiev] PHP Notice:  Undefined variable: db in D:\workspace\newhtf\view.phtml on line 64
+[21-Dec-2015 15:56:22 Europe/Kiev] PHP Warning:  mysql_query() expects parameter 2 to be resource, null given in D:\workspace\newhtf\view.phtml on line 64
+[21-Dec-2015 15:58:34 Europe/Kiev] PHP Warning:  mysqli::mysqli():  in D:\workspace\newhtf\view.phtml on line 42
+[21-Dec-2015 15:58:34 Europe/Kiev] PHP Warning:  mysqli::mysqli():  in D:\workspace\newhtf\view.phtml on line 42
+[21-Dec-2015 15:58:34 Europe/Kiev] PHP Notice:  Undefined variable: db in D:\workspace\newhtf\view.phtml on line 64
+[21-Dec-2015 15:58:34 Europe/Kiev] PHP Warning:  mysql_query() expects parameter 2 to be resource, null given in D:\workspace\newhtf\view.phtml on line 64
