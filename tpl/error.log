@@ -1,0 +1,5 @@
+[23-Dec-2015 12:55:29 Europe/Kiev] PHP Notice:  Use of undefined constant BASE_URL - assumed 'BASE_URL' in D:\workspace\newhtf\tpl\_header.phtml on line 6
+[23-Dec-2015 12:55:29 Europe/Kiev] PHP Notice:  Use of undefined constant BASE_URL - assumed 'BASE_URL' in D:\workspace\newhtf\tpl\_header.phtml on line 7
+[23-Dec-2015 12:55:29 Europe/Kiev] PHP Notice:  Use of undefined constant BASE_URL - assumed 'BASE_URL' in D:\workspace\newhtf\tpl\_header.phtml on line 8
+[23-Dec-2015 12:55:29 Europe/Kiev] PHP Notice:  Use of undefined constant BASE_URL - assumed 'BASE_URL' in D:\workspace\newhtf\tpl\form.phtml on line 1
+[23-Dec-2015 12:55:29 Europe/Kiev] PHP Notice:  Undefined variable: states in D:\workspace\newhtf\tpl\form.phtml on line 5
